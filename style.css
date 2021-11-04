@@ -692,7 +692,7 @@ button.collapsed.navbar-toggle.navbar-bdphoto {
 }
 
 .portfolio-area-bg {
-	background: rgba(0, 0, 0, 0) url("img/portfolio/portfolio_bg.jpg") no-repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("img/portfolio/portfolio-bg-woonefilm-1.png") no-repeat scroll center center / cover;
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -1113,7 +1113,7 @@ h3.counter::after {
 	background-attachment: scroll, scroll;
 	background-clip: border-box, border-box;
 	background-color: #000;
-	background-image: url("img/contact_bg.jpg");
+	background-image: url("img/contact-bg-wonefilm.png");
 	background-origin: padding-box, padding-box;
 	background-position: left center, right center;
 	background-repeat: no-repeat, repeat;
