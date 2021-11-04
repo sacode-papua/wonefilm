@@ -1,0 +1,1325 @@
+/*--------------------------------------------------------------------------------------
+Theme Name: BD-PHOTOGRAPHY
+Theme URI: http://devitfamily.com
+Author URI: http://devitfamily.com
+Description: 100% Responsive, Highly Customizable, SEO Friendly Photography Portfolio HTML5 template using Twitter Bootstrap Latest, Search Engine Friendly.
+Author: ThemeCTG
+Version: 1.0
+----------------------------------------------------------------------------------------
+   1. BASE CSS
+    2. TOP AREA
+        2.1 MAINMENU AREA
+        2.2 WELCOME TEXT AREA
+    3. ABOUT AREA
+    4. SERVICE AREA
+    5. PORTFOLIO AREA
+    6. PRICEING AREA
+    7. FACT AREA
+    8. BLOG AREA
+    9. CONTACT AREA
+    10. FOOTER AREA
+    11. SCROLL TO TOP
+----------------------------------------------------------------------------------------*/
+
+
+/*--------------------
+   1. BASE CSS
+----------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Roboto:400,700');
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+a {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+a:focus,
+a:hover {
+	outline: 0 solid;
+	text-decoration: none;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button:focus {
+	outline: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 15px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+}
+
+html,
+body {
+	height: 100%
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: 400;
+	color: #555555;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+
+.fix {
+	overflow: hidden;
+}
+
+.relative {
+	position: relative;
+	overflow: hidden;
+}
+
+.absulute {
+	position: absolute;
+}
+
+.v-center {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.social-bookmark li {
+	display: inline;
+}
+
+.social-bookmark li a {
+	display: inline-block;
+	font-size: 16px;
+	height: 30px;
+	padding-top: 3px;
+	text-align: center;
+	width: 30px;
+}
+
+.inline li {
+	display: inline;
+}
+
+.inline-block li {
+	display: inline-block;
+	padding: 5px 15px;
+}
+
+.navbar-toggle {
+	border: 2px solid #000000;
+	border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+	background: #000000 none repeat scroll 0 0;
+}
+
+.is-sticky .navbar-toggle {
+	border: 2px solid #ffffff;
+}
+
+.is-sticky .navbar-toggle .icon-bar {
+	background: #ffffff
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.area-title {
+	display: inline-block;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.area-title h2 {
+	color: #ff9933;
+	font-size: 72px;
+	font-weight: 800;
+	line-height: 1;
+	margin-bottom: 0;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 9;
+}
+
+.area-title h4 {
+	font-size: 30px;
+}
+
+.area-title.title-inverse {
+	float: right;
+}
+
+.title-box {
+	-webkit-box-shadow: 0 0 0 10px #ff9933;
+	box-shadow: 0 0 0 10px #ff9933;
+	height: 80%;
+	left: 0;
+	position: absolute;
+	top: -10px;
+	width: 16%;
+	z-index: 1;
+}
+
+.area-title.title-inverse .title-box {
+	left: auto;
+	right: 0;
+}
+
+.hidding-content {
+	padding-left: 100px;
+}
+
+.section-padding {
+	padding: 100px 0;
+}
+
+.padding-top {
+	padding-top: 100px;
+}
+
+.padding-bottom {
+	padding-bottom: 100px;
+}
+
+.padding-100-70 {
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+.padding-100-50 {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.light-gray-bg {
+	background: #EBEBEB;
+}
+
+.gray-bg {
+	background: #E1E1E1;
+}
+
+.dark-bg {
+	background: #000000;
+	color: #ffffff;
+}
+
+a.readmore {
+	background: #000000 none repeat scroll 0 0;
+	border-radius: 50px;
+	color: #ffffff;
+	display: inline-block;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+a.readmore:hover {
+	background: #ff9933 none repeat scroll 0 0;
+	color: #000000;
+}
+
+
+/*--------------------------
+    2. TOP AREA
+---------------------------*/
+
+.top-area {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.top-area-bg,
+.video-area-bg {
+	background: rgba(0, 0, 0, 1);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.top-area-bg::after,
+.video-area-bg:after {
+	background: #000;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+/*---------------------------------
+    2.1 MAINMENU AREA
+-----------------------------------*/
+
+.header-top-area {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.mainmenu-area {
+	position: relative;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	z-index: 9999 !important;
+}
+
+.navbar-header {
+	margin-top: 6px;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.navbar {
+	border-bottom: 0 none;
+	border-top: 0 none;
+	margin-bottom: 0;
+}
+
+.navbar-brand>img {
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.is-sticky .navbar-brand>img {
+	max-width: 80%;
+}
+
+ul#nav {
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent)) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(#fff, transparent) repeat scroll 0 0;
+	float: right;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+ul#nav li a {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 40px 15px;
+	position: relative;
+	text-transform: capitalize;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+ul#nav li a::after {
+	background: #ff9933 none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 0;
+}
+
+ul#nav li.active a::after,
+ul#nav li:hover a::after {
+	width: 100%;
+}
+
+ul#nav li a:hover,
+ul#nav li.active a {
+	color: #ff9933;
+}
+
+.is-sticky ul#nav li a {
+	padding: 20px 15px;
+	color: #ffffff;
+}
+
+.is-sticky ul#nav li a:hover,
+.is-sticky ul#nav li.active a {
+	color: #ff9933;
+}
+
+.is-sticky .navbar-header {
+	margin-top: -6px;
+}
+
+.is-sticky .mainmenu-area {
+	background: #000000;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+	z-index: 99999;
+}
+
+.bs-example-js-navbar-scrollspy {
+	float: right;
+}
+
+button.collapsed.navbar-toggle.navbar-bdphoto {
+	display: block;
+	float: right;
+	margin: 32px 0;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.is-sticky button.collapsed.navbar-toggle.navbar-bdphoto {
+	margin: 12px 0;
+}
+
+.is-sticky ul#nav {
+	background: transparent;
+}
+
+
+/*-----------------------------------
+    2.2 WELCOME TEXT AREA
+-------------------------------------*/
+
+.welcome-text-area {
+	color: #ffffff;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-top: 100px;
+	width: 100%;
+}
+
+.home-top-layer {
+	background: rgba(0, 0, 0, 0) url("img/slider/home_side_layer.jpg") repeat scroll 0 0 / cover;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60%;
+}
+
+.home-top-layer::after {
+	background: #000 none repeat scroll 0 0;
+	content: "";
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.home-top-layer img {
+	height: 100%;
+	width: 100%;
+}
+
+.welcome-text h3,
+.welcome-text h1 {
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.welcome-text h1 {
+	color: #ff9933;
+	font-size: 148px;
+	letter-spacing: 0;
+	line-height: 0.8;
+	text-align: right;
+}
+
+.welcome-text h1 span {
+	display: block;
+	font-size: 55px;
+	letter-spacing: 10px;
+	position: relative;
+	text-transform: lowercase;
+}
+
+.welcome-text h1 span::before {
+	background: #fff none repeat scroll 0 0;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	margin-right: 10px;
+	position: relative;
+	top: -10px;
+	width: 25%;
+}
+
+.home-button {
+	margin-top: 60px;
+}
+
+.home-button a {
+	background: #ff9933 none repeat scroll 0 0;
+	border-radius: 50px;
+	color: #ffffff;
+	font-size: 15px;
+	letter-spacing: 2px;
+	padding: 12px 30px;
+	text-transform: uppercase;
+}
+
+.home-button a:hover {
+	background: #ffffff;
+	color: #ff9933;
+}
+
+
+/*-----------------------------
+    3. ABOUT AREA
+-------------------------------*/
+
+.about-area .area-title {
+	margin-bottom: 20px;
+}
+
+.about-image {
+	-webkit-box-shadow: 0 0 0 10px #000000 inset;
+	box-shadow: 0 0 0 10px #000000 inset;
+	margin-right: 0;
+	margin-top: 0;
+	position: relative;
+}
+
+.about-image img {
+	-webkit-transform: translateY(30px) translateX(-30px);
+	transform: translateY(30px) translateX(-30px);
+	width: 100%;
+	z-index: 1;
+}
+
+.about-slider-area {
+	position: relative;
+}
+
+.about-slider-area::before {
+	background: #000 none repeat scroll 0 0;
+	content: "";
+	height: 60%;
+	left: 0;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.about-slider {
+	background: #000 none repeat scroll 0 0;
+	margin: 0 auto 100px;
+	text-align: center;
+	width: 80%;
+}
+
+.about-slider img {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.about-area .owl-item img {
+	background: #000 none repeat scroll 0 0;
+	max-width: 100%;
+	width: auto;
+}
+
+.about-slider {
+	background: #000 none repeat scroll 0 0;
+	margin: 0 auto 100px;
+	text-align: center;
+	width: 80%;
+}
+
+.about-area .owl-controls {
+	bottom: 20px;
+	position: absolute;
+	right: -60px;
+}
+
+.about-area .owl-controls .owl-nav>div {
+	color: #000000;
+	display: inline-block;
+	font-size: 35px;
+	height: 40px;
+	padding-top: 2px;
+	text-align: center;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	width: 60px;
+}
+
+.about-area .owl-controls .owl-nav>div:hover {
+	color: #ff9933;
+}
+
+
+/*------------------------------
+    4. SERVICE AREA
+-------------------------------*/
+
+.service-top {
+	position: relative;
+}
+
+.service-top-area-bg {
+	background: rgba(0, 0, 0, 0) url("img/service/service_bg_1.jpg") no-repeat scroll center center / cover;
+	bottom: 0px;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: calc(50%);
+}
+
+.service-top::before {
+	background: #000 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 50%;
+	top: 0;
+	width: 30%;
+}
+
+.service-bottom {
+	position: relative;
+}
+
+.service-bottom-area-bg {
+	background: rgba(0, 0, 0, 0) url("img/service/service_bg_2.jpg") no-repeat scroll center center / cover;
+	height: 63%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+}
+
+.single-service {
+	margin-top: 100px;
+}
+
+.service-details {
+	background: #f1f1f1 none repeat scroll 0 0;
+	padding: 20px;
+}
+
+.service-image img {
+	width: 100%;
+}
+
+.service-details h3 {
+	color: #ff9933;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.service-details>h3 i {
+	margin-right: 10px;
+}
+
+.service-details h3 span {
+	color: #333;
+	display: block;
+}
+
+
+/*-----------------------------
+    5. PORTFOLIO AREA
+-------------------------------*/
+
+.portfolio-area {
+	color: #fff;
+	position: relative;
+}
+
+.portfolio-area-bg {
+	background: rgba(0, 0, 0, 0) url("img/portfolio/portfolio_bg.jpg") no-repeat scroll center center / cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.service-top-area-bg:after,
+.service-bottom-area-bg::after,
+.portfolio-area-bg::after,
+.contact-area-bg:after {
+	background: #000 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.portfolio-menu {
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-bottom: -100px;
+	text-transform: uppercase;
+}
+
+.portfolio-menu li {
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+}
+
+.portfolio-menu li::after {
+	background: #ff9933 none repeat scroll 0 0;
+	content: "";
+	height: 30%;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%) skewX(-20deg);
+	transform: translateY(-50%) skewX(-20deg);
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 0;
+	z-index: -1;
+}
+
+.portfolio-menu li.active::after {
+	width: 50%;
+}
+
+.portfolio-content {
+	margin-top: -100px;
+}
+
+.single-portfolio {
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.portfolio-details {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	color: #ffffff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	z-index: 9;
+}
+
+.portfolio-details::before,
+.portfolio-details::after {
+	border-left: 2px solid;
+	border-right: 2px solid;
+	content: "";
+	height: calc(100% - 40px);
+	left: 20px;
+	position: absolute;
+	top: 20px;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	width: calc(100% - 40px);
+	z-index: -1;
+}
+
+.portfolio-details::before {
+	border-left: inherit;
+	border-right: inherit;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+}
+
+.portfolio-details h4 {
+	background: #000 none repeat scroll 0 0;
+	opacity: 0;
+	padding: 5px 15px;
+	-webkit-transform: translateY(-30px);
+	transform: translateY(-30px);
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.portfolio-details h5 {
+	opacity: 0;
+	-webkit-transform: translateY(30px);
+	transform: translateY(30px);
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.single-portfolio:hover .portfolio-details {
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+}
+
+.single-portfolio:hover .portfolio-details::after,
+.single-portfolio:hover .portfolio-details::before {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.single-portfolio:hover .portfolio-details h4,
+.single-portfolio:hover .portfolio-details h5 {
+	opacity: 1;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+
+/*------------------------------
+    6. PRICEING AREA
+-------------------------------*/
+
+.single-price {
+	border: 1px solid #e1e1e1;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	background: #f1f1f1;
+}
+
+.price-title,
+.price-button {
+	color: #000000;
+	padding: 30px 20px 20px;
+	position: relative;
+}
+
+.price-top-title {
+	border-bottom: 1px solid #e1e1e1;
+	min-height: 146px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.price-title p {
+	text-transform: uppercase;
+}
+
+.price-title h3 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.price-details {
+	overflow: hidden;
+	padding: 50px 0;
+	position: relative;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	z-index: 1;
+}
+
+.price-details ul {
+	font-size: 14px;
+	letter-spacing: 1px;
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.price-details ul li {
+	padding: 7px 0;
+}
+
+.price-button {
+	border-top: 1px solid #e1e1e1;
+	padding-bottom: 40px;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	padding-top: 20px;
+}
+
+.single-price.active,
+.single-price:hover {
+	background: #000000 none repeat scroll 0 0;
+	color: #fff;
+}
+
+.active .price-title,
+.active .price-button {
+	color: #fff;
+}
+
+.single-price.active .price-details::after,
+.single-price:hover .price-details::after {
+	left: 0;
+	opacity: 1;
+}
+
+.single-price.active .price-title,
+.price-button {
+	color: #ff9933;
+}
+
+.single-price.active .price-button a {
+	background: #fff none repeat scroll 0 0;
+	color: #000;
+}
+
+.single-price.active .price-button a:hover {
+	background: #ff9933 none repeat scroll 0 0;
+	color: #000000;
+}
+
+
+/*----------------------------------
+    7. FACT AREA
+-----------------------------------*/
+
+.fact-area {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	position: relative;
+	text-transform: capitalize;
+}
+
+.fact-area-bg {
+	background: rgba(0, 0, 0, 0) url("img/fact-area-bg.jpg") no-repeat scroll center center / cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.fact-area-bg::after {
+	background: #000;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.fact-icon {
+	border-radius: 50%;
+	font-size: 40px;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 16px;
+	text-align: center;
+	width: 80px;
+}
+
+h3.counter {
+	font-size: 40px;
+	position: relative;
+}
+
+h3.counter::after {
+	background: #ff9933 none repeat scroll 0 0;
+	bottom: -8px;
+	content: "";
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 100px;
+}
+
+
+/*-----------------------------
+    8. BLOG AREA
+-------------------------------*/
+
+.single-blog {
+	margin-top: 150px;
+	position: relative;
+	z-index: 9;
+}
+
+.single-blog::before {
+	background: #000 none repeat scroll 0 0;
+	content: "";
+	height: 79%;
+	left: 50px;
+	position: absolute;
+	top: -50px;
+	width: 80%;
+	z-index: -1;
+}
+
+.post-details {
+	background: #f1f1f1 none repeat scroll 0 0;
+	bottom: -50px;
+	left: 50px;
+	padding: 20px;
+	position: absolute;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.post-thumbnail img {
+	max-width: 80%;
+}
+
+.post-details .postmeta {
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.post-details h3 {
+	color: #000000;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.post-details .postmeta a {
+	color: #000;
+}
+
+.post-details .postmeta a:last-child {
+	float: right;
+}
+
+.single-blog a.readmore i {
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.single-blog a.readmore {
+	background: inherit;
+	color: #000;
+	padding: 0;
+}
+
+.single-blog a.readmore:hover i {
+	padding-left: 10px;
+}
+
+.blog-area .row div:last-child .single-blog {
+	margin-bottom: 50px;
+}
+
+.single-blog:hover .post-details {
+	background: #ffffff;
+	-webkit-box-shadow: 0 0 20px -4px;
+	box-shadow: 0 0 20px -4px;
+}
+
+
+/*------------------------------
+    9. CONTACT AREA
+-------------------------------*/
+
+.portfolio-area {
+	margin-bottom: 100px;
+}
+
+.portfolio-area-bg::before {
+	background: #e1e1e1 none repeat scroll 0 0;
+	bottom: -100px;
+	content: "";
+	height: 100px;
+	position: absolute;
+	width: 100%;
+}
+
+.contact-area {
+	color: #fff;
+	position: relative;
+}
+
+.contact-area-bg {
+	background-attachment: scroll, scroll;
+	background-clip: border-box, border-box;
+	background-color: #000;
+	background-image: url("img/contact_bg.jpg");
+	background-origin: padding-box, padding-box;
+	background-position: left center, right center;
+	background-repeat: no-repeat, repeat;
+	background-size: 50% 100%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.contact-area a {
+	color: #ffffff;
+}
+
+.contact-area a:hover {
+	color: #ff9933;
+}
+
+.contact-detaisls {
+	padding-left: 40px;
+}
+
+.single-contact {
+	min-height: 50px;
+	padding-left: 50px;
+	position: relative;
+}
+
+.contact-icon {
+	color: #fff;
+	font-size: 20px;
+	height: 40px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 40px;
+}
+
+.contact-social h3,
+.contact-social .social-bookmark {
+	display: inline-block;
+}
+
+.contact-social h3 {
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+}
+
+.contact-social h3::after {
+	background: #ff9933 none repeat scroll 0 0;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: -5px;
+	width: 100px;
+}
+
+.social-bookmark {
+	margin-bottom: 50px;
+}
+
+.footer-logo img {
+	max-width: 130px;
+}
+
+.footer-logo,
+.address-details {
+	margin-bottom: 20px;
+}
+
+.contact-area .modal-content {
+	background: rgba(0, 0, 0, 0) url("img/contact_bg.jpg") no-repeat scroll center center / cover;
+	border-radius: 0;
+	color: #fff;
+	z-index: 2;
+}
+
+.contact-area .modal-content::after {
+	background: #000 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.contact-area .modal-content h4 {
+	color: #fff;
+	text-align: center;
+	z-index: 9;
+}
+
+.contact-area .form-control {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid;
+	border-radius: 0;
+	color: #fff;
+	min-height: 40px;
+}
+
+.contact-area .contact-form button {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid;
+	height: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+}
+
+.contact-area .contact-form button:hover {
+	background: #ff9933 none repeat scroll 0 0;
+	border-color: #ff9933;
+	color: #000;
+}
+
+.contact-area .close {
+	color: #fff;
+	opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+	-webkit-transform: translate(0px, 0px);
+	transform: inherit translate(0px, 0px)
+}
+
+
+/*------------------------------
+    10. FOOTER AREA
+-------------------------------*/
+
+.footer-area {
+	border-top: 1px solid #333333;
+	color: #ffffff;
+	padding: 35px 0;
+}
+
+.footer-copyright p {
+	margin-bottom: 0;
+}
+
+.footer-copyright a.footer-logo {
+	border-bottom: 2px solid;
+	display: block;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	max-width: 300px;
+	padding-bottom: 10px;
+}
+
+.footer-copyright a {
+	color: #ff9933;
+}
+
+.footer-menu a {
+	color: #fff;
+}
+
+.footer-menu a:hover {
+	color: #ff9933;
+}
+
+.send-message-query a.readmore {
+	background: #fff none repeat scroll 0 0;
+	color: #000;
+	margin-top: -20px;
+}
+
+.send-message-query a.readmore:hover {
+	background: #ff9933 none repeat scroll 0 0;
+}
+
+
+/*------------------------------
+    11. SCROLL TO TOP
+-------------------------------*/
+
+a.scrolltotop {
+	background: #ff9933 none repeat scroll 0 0;
+	bottom: 20px;
+	-webkit-box-shadow: 0 0 0 7px transparent;
+	box-shadow: 0 0 0 7px transparent;
+	color: #ffffff;
+	display: none;
+	font-size: 20px;
+	height: 40px;
+	padding-top: 5px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	width: 40px;
+	z-index: 99;
+}
+
+a.scrolltotop:hover {
+	-webkit-box-shadow: 0 0 0 0 #000000;
+	box-shadow: 0 0 0 0 #000000;
+	background: #000000;
+}
