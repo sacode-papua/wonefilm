@@ -1191,7 +1191,7 @@ h3.counter::after {
 }
 
 .contact-area .modal-content {
-	background: rgba(0, 0, 0, 0) url("img/contact_bg.jpg") no-repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("img/contact_bg.png") no-repeat scroll center center / cover;
 	border-radius: 0;
 	color: #fff;
 	z-index: 2;
